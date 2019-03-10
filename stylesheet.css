@@ -1,0 +1,254 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@keyframes fadein{
+   from{opacity:0;}
+   to{opacity:1;}
+}
+.loading{
+   animation: fadein 2s;
+}
+.loading2{
+  animation:fadein 2s;
+}
+hr {
+  height:5px;
+  background-color:orange;
+}
+.betweenDivs{
+  margin-left: 27em;
+  width: 60%;
+}
+
+.pagelink:link {
+  color:#ede1d1;
+}
+.pagelink:visited{
+  color:#e4d2ba;
+}
+
+#menu {
+  list-style: none;
+  text-align: center;
+  }
+.Menu {
+  border:2px solid #a89070;
+  border-radius: 20%;
+  width: 255px;
+  height: 200px;
+  font-size: 30px;
+  margin-right: auto;
+  position: fixed;
+  background-image: url("imgs/menudivsbg2.jpg"); /*http://hq-wallpapers.ru/wallpapers/12/hq-wallpapers_ru_nature_56675_1920x1200.jpg*/
+  display: inline-block;
+  padding-left:25px;
+}
+
+#frontpage {
+  display: inline-block;
+  width: 15em;
+  line-height: 40px;
+  margin-left:5.5em;
+  font-size: 60px;
+  color:#546ee5;
+  text-align: center;
+  text-decoration: underline;
+  background-image: url("imgs/formbg.jpg"); /*http://eskipaper.com/images/spa-backgrounds-1.jpg*/
+  padding: 5px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 20%;
+}
+#home_frontpage{
+  display: inline-block;
+  width: 18em;
+  line-height: 30px;
+  margin-left:6.5em;
+  font-size: 50px;
+  color:#546ee5;
+  text-align: center;
+  text-decoration: underline;
+  background-image: url("imgs/formbg.jpg"); /*http://eskipaper.com/images/spa-backgrounds-1.jpg*/
+  padding: 10px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 20%;
+}
+#gallerypage{
+  display: block;
+  width: 15em;
+  line-height: 30px;
+  font-size: 80px;
+  color:#546ee5;
+  text-align: center;
+  text-decoration: underline;
+  background-image: url("imgs/formbg.jpg"); /*http://eskipaper.com/images/spa-backgrounds-1.jpg*/
+  padding: 10px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 20%;
+  margin: auto;
+}
+
+input[type=text]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size:25px;
+  width: 100%;
+}
+input[type=password]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size:25px;
+  width: 100%;
+}
+input[type=password1]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size:25px;
+  width: 100%;
+}
+.form{
+  font-size: 33px;
+  margin-left: 10em;
+  display: inline-block;
+  width: 26em;
+  border-radius: 5%;
+  text-align:center;
+  padding: 10px;
+}
+fieldset{
+  text-align: left;
+}
+#buttons{
+  text-align: center;
+}
+.button{
+  font-size: 26px;
+}
+
+.form {
+  background-image: url("imgs/formbg.jpg"); /*http://eskipaper.com/images/spa-backgrounds-1.jpg*/
+  padding: 20px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Gabriola;
+}
+input {
+  margin-bottom: 20px;
+}
+select {
+font-size:22px;
+}
+
+.Gallery {
+  width:1000px;
+  border: 2px solid black;
+  margin: auto;
+  position: relative;
+  top:40px;
+  border-radius: 5%;
+}
+.slideshow {
+  height: 500px;
+  border-radius: 5%;
+}
+
+#galleryaudio{
+  top:35em;
+  position: relative;
+}
+
+#gallerybutton{
+  position: relative;
+  top:80px;
+  text-align: center;
+}
+.onclickbutton{
+  font-size: 60px;
+  color:#546ee5;
+  text-align: center;
+  text-decoration: underline;
+  background-image: url("imgs/formbg.jpg"); /*http://eskipaper.com/images/spa-backgrounds-1.jpg*/
+  padding: 10px;
+}
+#abovebutton{
+  display: block;
+  width: 15em;
+  line-height: 30px;
+  font-size: 50px;
+  color:#546ee5;
+  text-align: center;
+  text-decoration: underline;
+  background-image: url("imgs/formbg.jpg"); /*http://eskipaper.com/images/spa-backgrounds-1.jpg*/
+  padding: 10px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 20%;
+  margin: auto;
+}
+#galleryhr{
+  width: 70%;
+}
+#infohr{
+  width:60em;
+  margin-left:19em;
+}
+
+#info{
+  display: inline-block;
+  width: 29em;
+  line-height: 30px;
+  margin-left:11.3em;
+  font-size: 30px;
+  color:#546ee5;
+  text-align: center;
+  background-image: url("imgs/infodiv.jpg"); /*http://sport1.ba/wp-content/uploads/2016/04/site-background.jpg */
+  padding: 10px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+
+}
+#Arraydiv_img{
+  display: inline-block;
+  width: 29em;
+  line-height: 20px;
+  margin-left:11.3em;
+  font-size: 30px;
+  text-align: center;
+  background-image: url("imgs/infodiv.jpg"); /*http://sport1.ba/wp-content/uploads/2016/04/site-background.jpg */
+  padding: 10px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  opacity: 90%;
+}
+.movebuttons{
+  margin: auto;
+  font-size: 26px;
+  color: black;
+}
+.slideshow1{
+  height: 450px;
+  width: 450px;
+  border: 1px solid black;
+}
+.captions{
+  height:200px;
+}
+html{
+  font-family: Gill Sans MT;
+}
+.workhours{
+  border: 2px solid black;
+  background-image: url("imgs/infodiv.jpg"); /*http://sport1.ba/wp-content/uploads/2016/04/site-background.jpg */
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+  padding:2px;
+}

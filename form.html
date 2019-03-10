@@ -1,0 +1,239 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <title>Spa</title>
+    <script></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
+    </head>
+
+  <body background="imgs/woodbg.jpg" alt="floorboards"><!--http://www.pressurewashinghoustontexas.net/wp-content/uploads/2013/02/background5.jpg-->
+    <a name="top"></a>
+<div class=loading2>
+<div id="mainpage">
+  <div id="header">
+    <img src ="imgs/header.jpg" height="550px" width="100%" alt="spa/rocks"></div>
+    <!--http://s3.amazonaws.com/brandrepup/media/166579/e09eefee63e983e8eb28f8964ff66b754e833c7f/original/image6.JPG?1467845772-->
+    <hr>
+
+<div class="navigate">
+  <div class="Menu">
+  <ul id="menu">
+    <li><a href="page1.html" class="pagelink">Home</a></li>
+    <li><a href="form.html" class="pagelink">Registration</a></li>
+    <!--<li><a href="mypage.html">extra</a></li>-->
+    <li><a href="index.html" class="pagelink">Information</a></li>
+    <li><a href=#top class="pagelink">Back Top</a></li>
+  </ul>
+</div>
+</div>
+<div id="frontpage">
+  <p>Registration Form</p>
+  </div>
+  <br>
+<br>
+<br>
+
+<div id="formbackground">
+<div class="form">
+  <p>If you wish to purchase a membership with our spa, Please fill out the form below.</p>
+    <p>All fields with an "*" are required, you cannot proceed if that space is empty.</p>
+  <form name="registration" id="registration" method="post" onSubmit="return validateORnot()">
+  <fieldset>
+    <Legend>Basic Information</legend>
+    *First Name:
+    <input type="text" name="FirstName"  style="width:200px;" class="textarea" maxlength="20" style="width:200px;">&nbsp&nbsp&nbsp
+    *Last Name:
+    <input type="text" name="LastName"  class="textarea" maxlength="20" style="width:200px;"><br>
+    *Cellphone:
+    <input type="text" name="phone" placeholder="XXX XXX XXXX" maxlength="13" class="textarea" style="width:200px;">&nbsp&nbsp&nbsp
+    *Email Address:
+    <input type="text" name="Email" class="textarea" style="width:250px;"> <br>
+    *DOB:
+    <input type="text" name="dob" placeholder="XX XX XXXX" maxlength="10" class="textarea" style="width:200px;">&nbsp&nbsp
+    *Today's date:
+    <input type="text" name="date" class="textarea" placeholder="XX XX XXXX" maxlength="10" style="width:200px;">&nbsp&nbsp<br>
+    *Referred By:
+    <select name="ref">
+      <option value="select one">Select One</option>
+      <option value="family">Family</option>
+      <option value="friend">Friends</option>
+      <option value="podcast">Podcast ads</option>
+      <option value="blog">Blog post</option>
+      <option value="internet">Internet ads</option>
+      <option value="None">None of the above</option>
+    </select>
+<br>
+    Skype:
+    <input type="text" name="skype" style="width:200px;" class="textarea">&nbsp&nbsp&nbsp&nbsp
+    *Gender: <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+
+    <br>
+
+    *Contact me by:
+    <input type="checkbox" name="contact" value="Phone Number">Phone Number
+    <input type="checkbox" name="contact" value="email">Email
+    <input type="checkbox" name="contact" value="letter">Letter in the mail
+    <input type="checkbox" name="contact" value="Skype">Skype
+</fieldset>
+<fieldset>
+  <legend>Emergency Contact</legend>
+  *Name of Contact:
+  <input type="text" name="name_emergency"  class="textarea" maxlength="30" style="width:400px;"><br>
+  *Relationship to person:
+  <input type="text" name="rel_emergency"  class="textarea" maxlength="15" style="width:400px;"><br>
+  *Cellphone #:
+  <input type="text" name="cell_emergency" placeholder="XXX XXX XXXX" maxlength="13" class="textarea" style="width:400px;">
+</fieldset>
+<!--</div>-->
+
+<!--<div class="form">-->
+  <!--<form name="registration" onsubmit="return validateORnot()">-->
+  <fieldset>
+  <legend>Personal Information</legend>
+    *Address:
+    <input type="text" name="Address" class="textarea" style="width:500px;">
+    Apt #:
+    <input type="text" name="apt" class="textarea" placeholder="XX" maxlength="3" style="width:100px;"><br>
+    *State:
+    <input type="text" name="State"  class="textarea" maxlength="4" placeholder="XXX" style="width:150px;">
+    *City:
+    <input type="text" name="City"  class="textarea" maxlength="15" placeholder="XXX" style="width:150px;"><br>
+    *Zipcode:
+    <input type="text" name="zipcode" class="textarea" placeholder="XXXXX" maxlength="5" style="width:150px;">
+    *Country:
+<select style="width:200px;" name="country">
+  <option value="select country">Select Country</option>
+	<option value="CAN">Canada</option>
+	<option value="CRI">Costa Rica</option>
+	<option value="FJI">Fiji</option>
+	<option value="FIN">Finland</option>
+	<option value="PRK">Korea, Democratic People's Republic of</option>
+	<option value="KOR">Korea, Republic of</option>
+	<option value="NZL">New Zealand</option>
+	<option value="NOR">Norway</option>
+	<option value="POL">Poland</option>
+	<option value="SGP">Singapore</option>
+	<option value="SWE">Sweden</option>
+	<option value="CHE">Switzerland</option>
+	<option value="TUR">Turkey</option>
+	<option value="GBR">United Kingdom</option>
+	<option value="USA">United States</option>
+	<option value="UMI">United States Minor Outlying Islands</option>
+	<option value="VGB">Virgin Islands, British</option>
+	<option value="VIR">Virgin Islands, U.S.</option>
+</select>
+<!-- countries from http://www.freeformatter.com/iso-country-list-html-select.html-->
+</fieldset>
+<!--</form>-->
+<!--</div>-->
+
+<!--<div class="form">-->
+  <!--<form name="registration" onsubmit="return validateORnot()">-->
+  <fieldset>
+  <legend>Membership Information</legend>
+  *Please Select the Type of Membership
+  <select onclick="OpenNewDiv(this)" id="required" name="selectmembership">
+    <option value="blank"> </option>
+    <option value="Regular Spa Packages" id="Regular Spa Packages">Regular Spa Package</option>
+    <option value="Premium Spa Packages">Premium Spa Packages</option>
+  </select>
+  <div id="RegularSpaPackage" style="display:none"> <!--All Packages come from http://www.ohmspa.com/packages-combinations/ -->
+  <p>Package A:</p>
+  <ol>
+    <li>30 minute Target Massage</li>
+    <li>30 minutes Facial treatment</li>
+    <li>*twice a week*</li>
+  </ol>
+  <p>Package B:</p>
+  <ol>
+    <li>60 minute Massage or Facial</li>
+    <li>Salt of Earth Full Body Scrub</li>
+    <li>*once a week*</li>
+  </ol>
+  <p>Package C:</p>
+  <ol>
+    <li>60 minute Full Body Massage</li>
+    <li>60 minute Facial</li>
+    <li>*once a week*</li>
+  </ol>
+
+</div>
+<div id="PremiumSpaPackage" style="display:none">
+<p>Package A:</p>
+  <ol>
+  <li>60 minute Full Body Massage</li>
+  <li>60 minute Facial</li>
+  <li>Salt of Earth Full Body Scrub</li>
+  <li>*twice a week*</li>
+</ol>
+<p>Package B:</p>
+<ol>
+  <li>60 minute 4-Handed Signature Massage</li>
+  <li>75 minute Premium + Facial</li>
+  <li>$50 Spa Gift Bag of Special Take Home Spa Products</li>
+  <li>*once a week*</li>
+</ol>
+<p>Package C:
+  -For Couples-</p>
+  <ol>
+  <li>60 minute Side by Side Massage</li>
+  <li>60 minute Side by Side Facial</li>
+  <li>*twice a week*</li>
+</ol>
+</div>
+<select name="selectPackage">
+  <option value="blank"> </option>
+  <option value="Package A">Package A</option>
+  <option value="Package B">Package B</option>
+  <option value="Package C">Package C</option>
+</select>
+</fieldset>
+
+<fieldset>
+  <legend>Payment Information</legend>
+  *Credit Card #: <input type="password" name="creditcard" class="textarea" style="width:250px;" placeholder="**** **** **** ****" min="13" maxlength="20"> <br>
+
+  *Credit Card: <br>
+<input type="radio" name="card" value="Visa">Visa <br>
+<input type="radio" name="card" value="Mastercard">Mastercard<br>
+<input type="radio" name="card" value="American Express">American Express
+</fieldset>
+
+<fieldset>
+  <legend>Account Creation</legend>
+  *Username: <input type="text" name="username" class="textarea" min="6" maxlength="15" style="width:250px;"  maxlength="20"><br>
+
+  *Password: <input type="password" name="passcode" class="textarea" min="6" maxlength="15" style="width:250px;"  maxlength="20"><br>
+
+  *Confirm Password: <input type="password" name="passcode1" min="6" maxlength="15" class="textarea" style="width:250px;"  maxlength="20">
+
+
+</fieldset>
+<fieldset>
+  <legend>Other additional comments and requests</legend>
+<textarea maxlength="60" style="width:50%;height:100px;">Leave your comments and requests here. . .</textarea>
+
+</fieldset>
+<div id="buttons">
+  <input type="submit" class="button" value="Submit Form"> <!--onClick="validateORnot()"-->
+  <input type="reset" class="button" onClick="Erase()" value="Clear Form">
+
+</div>
+<!--</form>-->
+</div>
+</form>
+<audio id="audio" controls loop="true" autoplay>
+  <source src="greetings.mp3" type="audio/mpeg">
+  </audio>
+
+</div>
+
+
+
+
+</div>
+</div>
+</body>
+</html>

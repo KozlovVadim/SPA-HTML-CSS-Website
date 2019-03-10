@@ -1,0 +1,123 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <title>Spa</title>
+    <script></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
+    </head>
+
+  <body background="imgs/woodbg.jpg" alt="floorboards" onLoad="startup()" class="loading"><!--http://www.pressurewashinghoustontexas.net/wp-content/uploads/2013/02/background5.jpg-->
+<div class="loading">
+    <a name="top"></a>
+
+
+  <div id="header">
+    <img src ="imgs/header.jpg" height="550px" width="100%" alt="spa/rocks"></div>
+    <!--http://s3.amazonaws.com/brandrepup/media/166579/e09eefee63e983e8eb28f8964ff66b754e833c7f/original/image6.JPG?1467845772-->
+    <hr>
+
+<div class="navigate">
+  <div class="Menu">
+  <ul id="menu">
+    <li><a href="page1.html" class="pagelink">Home</a></li>
+    <li><a href="form.html" class="pagelink">Registration</a></li>
+    <!--<li><a href="mypage.html">extra</a></li>-->
+    <li><a href="index.html" class="pagelink">Information</a></li>
+    <li><a href=#top class="pagelink">Back Top</a></li>
+  </ul>
+</div>
+</div>
+<div id="home_frontpage">
+  <p>Welcome to our world-renowned spa</p>
+  <p>Small World Sanctuary</p>
+  </div>
+</div>
+<br>
+<hr id="infohr">
+<br>
+<div id=info>
+  <p>
+  <span style="text-decoration:underline;">Small World Sanctuary</span>, where you create your own world to relax in.
+  We, the staff of <span style="text-decoration:underline;">Small World Sanctuary</span>, will try our best to provide <br>
+  everything you may need and want to help you relieve that stress. <br>
+  <span style="font-size:13px;">(within reasonable limits).</span><br><br>
+  <span style="text-decoration:underline;">Small World Sanctuary</span> offers you multiple choices of what kinds of massage you may need or want.
+  We are able to provide you with a membership that comes with special already made up packages that you can purchase when you register for an account.
+  These membership packages are re-usable, when you view the package you will see how many times a week you can use it.
+  <br><br>If you do not want to purchase a membership at the moment then you can choose what kind of massage you want. If you look below this you will see
+  what kind of massage <span style="text-decoration:underline;">Small World Sanctuary</span>.
+</p>
+</div>
+<br>
+<br>
+<hr id="infohr">
+<br>
+
+<div id="Arraydiv_img"><br>
+  <h2 id="page1headding">Types of Massages</h2>
+  <br>
+  <img name="slideshow1" src="arrayGallery/aroma.jpg" class="slideshow1"><br><br>
+  <img name="captions" class="captions" src="captions/caption0.png"><br>
+<!--all captions come from https://www.verywell.com/most-popular-types-of-massage-89741-->
+
+  <a href="javascript:doBack()" class="movebuttons">Back</a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="javascript:doNext()" class="movebuttons">Next</a>
+
+
+  <script>
+  var imgArray = new Array(5);
+  var caption = new Array(2);
+  var index = 0;
+
+  function doBack(){
+    if (index > 0 ){
+      index--;
+      document.slideshow1.src = imgArray[index].src;
+      document.captions.src = caption[index].src;
+    }
+    return;
+  }
+  function doNext(){
+    if (index < 4){
+      index++;
+      document.slideshow1.src = imgArray[index].src;
+      document.captions.src = caption[index].src;
+    }
+    return;
+  }
+
+  function startup(){
+    imgArray[0] = new Image;
+    imgArray[0].src = "arrayGallery/aroma.jpg";
+    imgArray[1] = new Image;
+    imgArray[1].src = "arrayGallery/deeptissue.jpg";
+    imgArray[2] = new Image;
+    imgArray[2].src = "arrayGallery/hotstone.jpg";
+    imgArray[3] = new Image;
+    imgArray[3].src = "arrayGallery/sports.jpg";
+    imgArray[4] = new Image;
+    imgArray[4].src = "arrayGallery/reflex.jpg";
+    caption[0] = new Image;
+    caption[0].src = "captions/caption0.png";
+    caption[1] = new Image;
+    caption[1].src = "captions/caption1.png";
+    caption[2] = new Image;
+    caption[2].src = "captions/caption2.png";
+    caption[3] = new Image;
+    caption[3].src = "captions/caption3.png";
+    caption[4] = new Image;
+    caption[4].src = "captions/caption4.png";
+    return;
+  }
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <audio id="audio" controls loop="true" autoplay>
+    <source src="greetings.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

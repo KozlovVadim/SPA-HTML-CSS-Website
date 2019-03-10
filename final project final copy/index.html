@@ -1,0 +1,128 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <title>Spa</title>
+    <style> .slideshow{display:none;}</style>
+    <script></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
+    </head>
+
+  <<body background="imgs/woodbg.jpg" alt="floorboards"><!--http://www.pressurewashinghoustontexas.net/wp-content/uploads/2013/02/background5.jpg-->
+    <a name="top"></a>
+    <div class="loading2">
+    <div id="gallerypage">
+      <p>Your Small World Sanctuary awaits</p>
+      </div>
+    </div>
+        <br>
+        <br>
+      <hr id="galleryhr">
+
+<div class="Gallery">
+<img src="Gallery/one.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/two.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/three.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/four.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/five.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/six.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/seven.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/eight.jpg" class="slideshow" style="width:100%">
+<img src="Gallery/nine.jpg" class="slideshow" style="width:100%">
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+  <hr id="galleryhr">
+<br>
+
+<table class="workhours">
+  <tr>
+    <th>Operational hours</th>
+  </tr>
+  <tr>
+    <th>Monday:</th>
+      <td>8:00 AM till 6:00 PM</td>
+  </tr>
+  <tr>
+    <th>Tuesday:</th>
+    <td>10:00 AM till 6:00 PM</td>
+  </tr>
+  <tr>
+    <th>Wednesday:</th>
+    <td>10:00 AM till 6:00 PM</td>
+  </tr>
+  <tr>
+    <th>Thursday:</th>
+    <td>10:00 AM till 6:00 PM</td>
+  </tr>
+  <tr>
+    <th>Friday:</th>
+    <td>8:00 AM till 6:00 PM</td>
+  </tr>
+  <tr>
+    <th>Saturday:</th>
+    <td>10:00 AM till 5:00 PM</td>
+  </tr>
+  <tr>
+    <th>Sunday:</th>
+    <td>8:00 AM till 3:00 PM</td>
+  </tr>
+  </table>
+  <br>
+
+
+    <hr id="galleryhr">
+    <br>
+
+  <table class="workhours">
+    <tr>
+      <th>Contact us</th>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td><a href="mailto:SmallworldS@reservespa.com">SmallworldS@reservespa.com</a></td>
+    </tr>
+    <tr>
+      <th>Phone #</th>
+      <td>346-654-SWSS</td>
+    </tr>
+  </table>
+
+
+  <div id="gallerybutton">
+<button onclick="location.href='page1.html'"
+class="onclickbutton">Click Here to Start Today</button>
+
+</div>
+<br>
+<br>
+<br>
+<script>
+var moveimgs=0;
+Slideshow();
+
+function Slideshow() {
+  var i;
+  var move = document.getElementsByClassName("slideshow");
+  for (i=0; i < move.length; i++){
+    move[i].style.display="none";
+  }
+  moveimgs++;
+  if (moveimgs > move.length) {moveimgs = 1}
+  move[moveimgs-1].style.display="block";
+  setTimeout(Slideshow, 2000);
+  //*****************
+
+}
+</script>
+
+<!-- <audio id="galleryaudio" controls loop="true" autoplay>
+  <source src="greetings.mp3" type="audio/mpeg">
+  </audio> -->
+
+</body>
+</html>
